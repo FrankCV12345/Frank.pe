@@ -1,0 +1,306 @@
+*{
+  padding:0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#mensaje{
+  padding-top:  100px;
+  background-color: rgba(255, 255, 255);
+}
+h3{
+  text-align: center;
+}
+#volver{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  margin: 0 auto;
+  background-color: rgb(51, 118, 172);
+  -webkit-box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+  -moz-box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+  box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+ font-size: 20px;
+ cursor: pointer;
+ color: black;
+}
+#logo{
+  width: 54px;
+  height: 60.72px;
+  left: 10.5%;
+  position: absolute;
+
+
+}
+body{
+font-family:'Montserrat', sans-serif;
+}
+
+.Titulos{
+  line-height: 1.2;
+  text-align:center;
+  color:rgb(0, 0, 0);
+  padding:6px;
+
+}
+
+
+a{
+  text-decoration: none;
+color:rgb(84, 84, 84);
+}
+#IconoMenu{
+  display: none;
+}
+#MenuListaMovil {
+  display: none;
+}
+
+
+#Contenedor{
+margin-top: 15px;
+margin-bottom: 15px;
+width: 80%;
+height: 2500px;
+margin-left: 10%;
+margin-right: 10%;
+color:rgb(238, 244, 237);
+-webkit-box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+-moz-box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+box-shadow: -3px 6px 46px -1px rgba(0,0,0,0.73);
+}
+
+
+#menu{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    width: 79.55%;
+
+    }
+
+#menu li {
+    flex-grow: 1;
+    float: left;
+    display: block;
+    color:rgb(84, 84, 84);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border-top:  2px solid rgb(84, 84, 84);
+    margin-right: 10px;
+    -webkit-box
+
+}
+
+#menu li:hover{
+  border-top: 4px solid rgb(51, 118, 172);
+
+}
+
+.OpMenu{
+  top: 55px;
+  position:relative;
+  width: 100%;
+  height: 23.65%;
+  color:rgb(84, 84, 84);
+
+}
+
+#DivInicio{
+  background-color: white;
+}
+#DivServicios{
+transition: width 2s;
+}
+#DivNosotros{
+
+    background-color:rgba(247, 247, 247, 0.66);
+}
+#DivContacto{
+  background-color:rgba(247, 247, 247, 0.66);
+}
+ .Nosotros{
+   padding: 5px;
+   position: relative;
+   text-align:justify;
+   width: 65%;
+   height: auto;
+   margin: 0 auto;
+   top: 20%;
+     }
+.padre-cont-zapatos{
+      position:relative;
+      top: 15%;
+      margin: 0 auto;
+      max-width: 810px;
+    }
+.cont-zapatos{
+  float: left;
+  display: table;
+ max-width: 400px;
+ margin: 10px;
+}
+.cont-zapatos img{
+  max-width: 350px;
+}
+h2{
+background-color:#181818;
+color: white;
+padding: 5px;
+}
+
+#subir{
+  position: fixed;
+  z-index:1;
+  width: 150px;
+  height:100px;
+  left: 45%;
+  top:92%;
+  border-radius:50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(220, 224, 218);
+  padding-top: 25px;
+  padding-left: 30px;
+}
+#FrmContacto{
+  top: 10%;
+  width: 450px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing:border-box;
+  margin-top: 20px;
+  border-radius: 5px;
+  }
+  input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  #BtnEnviar{
+    background: transparent;
+    border: solid 2px #1ED760;
+    color: white;
+    padding: 20px;
+  }
+  #BtnEnviar:hover {
+    cursor: pointer;
+  }
+footer{
+  margin-top: 75px;
+  color: black;
+  padding-top: 25px;
+  text-align: center;
+  height:100px;
+  border-top: solid 1px #4C4C4C;
+  border-bottom: solid 1px #4C4C4C;
+}
+
+/*-------------movil-------------------------*/
+@media screen  and (max-width: 1000px){
+.padre-cont-zapatos{
+      max-width: 650px;
+    }
+.cont-zapatos{
+ max-width: 300px;
+ margin: 2px;
+}
+.cont-zapatos img{
+  max-width: 250px;
+}
+}
+@media screen  and (max-width: 800px){
+.padre-cont-zapatos{
+      top: 5px;
+      max-width: 210px;
+    }
+.cont-zapatos{
+ max-width: 200px;
+ margin: 5px;
+
+}
+.cont-zapatos img{
+  max-width: 200px;
+}
+}
+@media screen and (max-width: 600px) {
+
+
+  #subir{
+    left: 40%;
+    width: 100px;
+    padding-left:5px;
+  }
+
+  .Nosotros{
+    width: 90%;
+    margin-top:-5px;
+      }
+
+  #FrmContacto{
+    width: 100%;
+    }
+ #Contenedor{
+   width: 100%;
+   margin-left: 0%;
+   margin-right: 0%;
+   margin-top: 0px;
+   margin-bottom:0px;
+ }
+ #menu{
+   display: none;
+ }
+  .OpMenu{
+   top: 122px;
+   height: 23.09%;
+    }
+
+    h3{
+      font-size:15px;
+    }
+
+     #MenuListaMovil {
+     display:block;
+     position: absolute;
+     z-index: 1;
+     width: 100%;
+     top: 57px;
+     list-style: none;
+             }
+
+     #MenuListaMovil li a{
+     color: rgb(251, 255, 251);
+     }
+
+     #MenuListaMovil li{
+
+      text-decoration: none;
+      text-align:center;
+      vertical-align: middle;
+      font-size: 20px;
+      list-style: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 1px solid rgb(251, 255, 251);
+      height: 30px;
+
+      }
+     footer{
+  margin-top: 25px;
+  padding-top: 0px;
+}
+
+  }

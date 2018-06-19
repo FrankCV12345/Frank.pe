@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OLDAZAC</title>
+<meta charset="utf-8">
+<!--<link rel="shortcut icon" type="image/x-icon" href="...\imagenes\LOGO_FCV.ico"  />-->
+<link rel="icon" type="image/png" href=".../imagenes/FCV2_grueso.png" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="MiEstilo.css" >
+<script type="text/javascript" src="data:application/octet-stream;base64,DQo="></script>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
+</head>
+<script type="text/javascript">
+  $(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
+<body>
+  <div id="Contenedor">
+    <header id="cabezera">
+<h1 class="Titulos"> OLDAZAC  </h1>
+<ul id="MenuListaMovil" >
+  <li><a href="#DivInicio">Inicio</a></li>
+  <li><a href="#DivServicios">Servicios</a></li>
+  <li><a href="#DivNosotros">Nosotros</a></li>
+  <li><a href="#DivContacto">Contacto</a></li>
+</ul>
+
+<ul id="menu">
+  <li><a href="#DivInicio">Inicio</a></li>
+  <li><a href="#DivServicios">Servicios</a></li>
+  <li><a href="#DivNosotros">Nosotros</a></li>
+  <li><a href="#DivContacto">Contacto</a></li>
+</ul>
+</header>
+<a href="#cabezera"><div id="subir"> Subir al menu</div></a>
+<div id="DivInicio" class="OpMenu">
+    <h2>Inicio</h2>
+    <div class="padre-cont-zapatos">
+    <div class="cont-zapatos">
+  <img src="https://i2.linio.com/p/030a96472200bc550b83e3eb2880bf3e-product.jpg">
+  <p>Set de tacos con diseños: de 300 a 350 dólares. </p>
+    </div>
+    <div class="cont-zapatos">
+      <img src="https://s2.bukalapak.com/img/2454853071/w-1000/PROMO_Sepatu_Sandal_High_Heels_Wanit_model_korea_baru_kekini.jpg">
+      <p>Set de tacos simples: desde 150 dólares </p>
+    </div>
+  </div>
+</div>
+<div id="DivServicios" class="OpMenu">
+   <h2>Nosotros</h2>
+  <h3 class="Nosotros">Quienes somos :</h3>
+  <p id="ParrafoQuienesSomos" class="Nosotros">
+    empresa dedicada a la comercialización de productos de calzados con tacos removibles a través de una página web, en donde se dará la entrega del producto por Delivery a costo cero. Esta empresa no solo se quiere encargar de comercializar sino dar información adicional que les pueda ser útil al momento de usar nuestros productos, así como brindar confianza al momento de que los clientes puedan ver el proceso de su compra. 
+
+  </p>
+</div>
+<div id="DivNosotros" class="OpMenu">
+  <h2 >Visión y Misión </h2>
+<h3 class="Nosotros" >Visión :</h3> 
+
+<p class="Nosotros">Ser la primera opción de compra en el mercado por brindar comodidad, practicidad e Innovación en el calzado femenino. </p>
+
+ <h3 class="Nosotros" > Misión :</h3>
+<p class="Nosotros">Comercializar calzados, a través de diseños innovadores y de buena calidad, manteniendo La estética femenina</p>
+  </div>
+<div id="DivContacto" class="OpMenu">
+  <h2>Contacto</h2>
+  <form action="enviar.php" id="FrmContacto" method="post">
+<input type="text" name="TxtNombre" placeholder="Nombre" required>
+<input type="email" name="Txtcorreo" placeholder="Correo" required>
+<input type="number" name="TxtTelefono" placeholder="Celular o telefono"   required>
+  <textarea name="message" placeholder="Escriba aqui su mesaje"  required ></textarea>
+ <input type="submit" name="envia" value="Enviar" id="BtnEnviar">
+  </form>
+  <footer> Copyright © 2018 - OLDAZAC - Todos los Derechos Reservados.
+       <br>Desarrollado por -<a href="http://frank.pe/">Frank.pe</a>
+      <br>Teléfono: 936 756 251 - Facebook: oldazac calzados - Instagram : oldazac 
+    </footer>
+</div>
+
+  </div>
+</body>
+
+</html>

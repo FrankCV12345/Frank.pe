@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body,html{
+                height:100%;
+            }
+            body{
+                background-color:rgba(0,0,0,0.8);
+            }
+            .padre{
+                max-width:1000px;
+                min-height:100%;
+                margin:0 auto;
+            }
+            .frm{
+                width:500px;
+                padding:5px;
+                min-height:100%;
+                margin:0 auto;
+                display:table;
+                float:left;
+                box-sizing: border-box;
+            }
+            input{
+                width:95%;
+                height:30px;
+                margin:5px;
+                background-color:transparent;
+                color:white;
+                border:solid 1px white;
+                padding:2px;
+            }
+            textarea{
+                width:95%;
+                height:200px;
+                margin:5px;
+                background-color:transparent;
+                color:white;
+                  border:solid 1px white;
+                padding:2px;
+            }
+            #frmhijo{
+                max-height:50%;
+                margin-top:25%;
+                background-color:#29ABE2;
+            }
+            #btn{
+                background-color:transparent;
+                border:solid 2px white;
+                width:auto;
+            }
+            h4{
+            
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="padre">
+        <form action="enviar-correo.php"  method="post" class="frm">
+            <div id="frmhijo">
+                <h4>  Propuesta de desarrollo de pagina web</h4>
+            <input type="text" placeholder="Destinatario" name="destinatario" required >
+            <input type="text" placeholder="Asunto" name="asunto" required >
+            <textarea  placeholder="Mensaje" name="message" required></textarea>
+            <input type="submit" value="ENVIAR" id="btn">
+            </div>
+        </form>
+        <form action="enviar-correo-mejora.php"  method="post" class="frm">
+            <div id="frmhijo">
+                <h4> Propuesta de mejora de pagina web</h4>
+            <input type="text" placeholder="Destinatario" name="destinatario" required >
+            <input type="text" placeholder="Asunto" name="asunto" required >
+            <textarea  placeholder="Mensaje" name="message" required></textarea>
+            <input type="submit" value="ENVIAR" id="btn">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

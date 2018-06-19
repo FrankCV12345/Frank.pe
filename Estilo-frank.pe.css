@@ -1,0 +1,567 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+.full-screem{
+	max-width: 2000px;
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+	/*border: solid 4px  black;*/
+}
+.contenedor{
+	/*border: solid 4px pink;*/
+	width: auto;
+	min-height: 100%;
+}
+/*MENU PARA PC*/
+.box-menu ,.box-menu-exis {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.box-menu-exis{
+    display:none;
+}
+.first-line,.second-line,.first-line-exis,.second-line-exis{
+	width: 50px;
+	height: 5px;
+	background-color: white;
+	margin-top: 4px;
+	border-radius:2.5px; 
+}
+.first-line-exis{
+    transform-origin: right;
+    transform:rotate(-33deg);
+    margin-left:-4px;
+}
+.second-line-exis{
+    transform-origin: left;
+    transform:rotate(33deg);
+    margin-top:-5px;
+    margin-left:4px;
+}
+.third-line{
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	margin-top: 4px;
+	border-radius:2.5px;
+}
+.envol-cont-items-menu{
+   /*border: solid 1px red;*/
+    width:33%;
+    margin-top:-300%;
+    transition:all 0.6s;
+    position:fixed;
+    z-index:8;
+    height:100%;
+    background-color:rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+.envol-cont-items-menu a{
+    color:white;
+}
+.cont-items-menu-vertical{
+     margin-top:50px;
+}
+.mis-aportes{
+    width:100%;
+    position:relative;
+    overflow: hidden;
+}
+.mis-aportes .mis-aportes-list{
+    margin-top:-200%;
+    transition:all 0.8s;
+}
+.mis-aportes ul li{
+    margin:5px;
+    text-align:center;
+    border:solid 1px #1ED760;
+    padding:5px;
+}
+.items-menu-vertical{
+       margin:4px;
+    text-align:center;
+    padding:8px;
+}
+
+.cont-first-box{
+	background-color:rgba( 0, 0, 0, 0.5 );
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.videito{
+	width: 100%;
+	height:auto;
+	position: relative;
+	z-index:-3;
+	margin-bottom: -5px;
+/*	border: solid 1px red;
+	display:none;*/
+}
+.foto-videito{
+    display:none;
+}
+.portada-mas-sobre-mi,.portada-contacto,.portada-servicios{
+    display: block;
+    width: 100%;
+	height:auto;
+	position: relative;
+	z-index:-3;
+	margin-bottom: -5px;
+    }
+.cont-first-box .que-hago , .inspira{
+	position: absolute;
+	width: 50%;
+    left: 25%;
+    z-index:0;
+    text-align: center;
+}
+.frase-first-box{
+    font-size:38px;
+    width: 100%;
+    min-height:100%;
+    max-height:50%;
+    position: absolute;
+    z-index:0;
+    text-align: center;
+    top:0;
+    padding-top:10%;
+    box-sizing: border-box;
+}
+.que-hago {
+    top: 25%;
+}
+.inspira{
+    top: 35%;
+}
+.que-hago p{
+	text-align: center;
+	font-size: 26px;
+	padding-bottom: 20px;
+}
+.cont-first-box  h1{
+	text-align: center;
+	color:white;
+}
+a:link   
+{   
+ text-decoration:none;   
+} 
+
+.mas-sobre-mi{
+	border: solid 2px #1ED760;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 120px;
+	text-align: center;
+	color: #1ED760;
+	text-decoration:none;
+}
+.cont-second-box{
+	color: black;
+	padding: 20px;
+	/*border: solid 1px red;*/
+}
+.cont-second-box h1 {
+	text-align: center;
+}
+.cont-second-box p{
+	margin-top: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.cont-third-box{
+	background-color:rgba( 0, 0, 0, 0.5);
+	position: relative;
+}
+.cont-third-box img{
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: -3;
+	margin-bottom: -5px;
+}
+
+.cont-proceso-desarrollo,.cont-sobre-mi{
+	width: 80%;
+	position: relative;
+	left: 10%;
+	display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.items-proces-desarrollo{
+	margin-top: 30px;
+	max-width: 40%;
+}
+
+.items-proces-desarrollo img {
+	width: 50%;
+	margin-left:25%;
+	max-width: 200px;
+}
+
+.menu-pc{
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	max-width:2000px;
+	margin:0 auto;
+	height: 50px;
+	top:0px;
+	color: white;
+	}
+.menu-pc nav{
+	width: 100%;
+	height: 50px;
+	top:0px;
+}
+.menu-pc nav .cont-items-menu{
+	width: auto;
+	height: 50px;
+	/*border: solid 1px red;*/
+	list-style: none;
+}
+.menu-pc nav .cont-items-menu .items-menu{
+	padding-top: 10px;
+	float: left;
+	width: 33.1%;
+	height: 50px;
+	/*border: solid 1px blue;*/
+	text-align: center;
+}
+.items-contacto{
+	float: left;
+	width: auto;
+	list-style: none;
+}
+#floro{
+	position: relative;
+	margin-top: 15px;
+
+}
+.menu-movil{
+	display: none;
+}
+
+a{
+	color: #1ED760;
+}
+
+
+.conponente-footer{
+	background-color: #181818;
+	width: auto;
+	height: 150px;
+	text-align: center;
+}
+.redes-sociales{
+	width: auto;
+	padding: 5px;
+	position: relative;
+}
+.redes-sociales img{
+	width: 35px;
+	height: auto;
+}
+.cont-footer{
+	position: relative;
+	width: 50%;
+	height: 60%;
+	top: 20%;
+	left: 25%;
+}
+.contacto-fb{
+	position: fixed;
+	text-align: center;
+	top: auto;
+	bottom:0px;
+	right:auto;
+	left:5px;
+	width: auto;
+	height: auto;
+	color: white;
+	z-index:9;
+	padding:4px;
+	background-color:#4267B2;
+	border-radius:5px;
+}
+.contacto-fb:hover{
+    cursor:pointer;
+}
+.sobre-mi-parrafo{
+    width:50%;
+    height:auto;
+    padding-top:5%;
+}
+.mi-avatar{
+    width:50%;
+    height:auto;
+    max-width:400px;
+    max-height:400px;
+}
+#cierra_mens{
+    display:none;
+}
+#cont-men-fb{
+    width:340px;
+    height:auto;
+    display:none;
+}
+#portada-movil,#porata-contacto-movil,#portada-servicios-movil{
+    display:none;
+}
+/*CONTACTO*/
+
+.padre-cont-form{
+    max-width:1200px;
+    margin:0 auto;
+}
+.hijo-cont-form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.Cont-form,.cont-info{
+    width:50%;
+    box-sizing: border-box;
+    max-width:600px;
+    margin:0 auto;
+}
+.cajas-form{
+   width: 95%;
+	margin: 10px;
+	height: 30px;
+	padding: 2px;
+	font-family:'Roboto Condensed', sans-serif;
+}
+.mensaje{
+    width: 95%;
+	margin: 10px;
+	height:100px;
+	padding: 2px;
+	font-family:'Roboto Condensed', sans-serif;
+}
+.BtnEnviar{
+    margin:10px;
+    height: 30px;
+    width: 150px;
+    background-color:#1ED860;
+    border:solid 2px #1ED860;
+    color:white;
+}
+.cont-info{
+    padding-top:8%;
+}
+/*SERVICIOS*/
+.cont-servicios{
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.items-servicios{
+    max-width:400px;
+    background-color:#F4F4F4;
+    margin-top:5px;
+    margin-bottom:5px;
+   -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    
+}
+.items-servicios img{
+    max-width:400px;
+    width:95%;
+    margin-left:2.5%;
+}
+.items-servicios p{
+    padding:5px;
+    text-align:center;
+}
+
+@media screen and (max-width: 900px){
+	.pestana-contacto{
+		display: none;
+	}
+	.contacto-fb #logo-men{
+	    width:35px;
+	    height:auto;
+	}
+	.cont-first-box .que-hago{
+	width: 70%;
+    top: 25%;
+    left: 15%;
+    }
+    .inspira{
+    width: 70%;
+    top: 20%;
+    height:60%;
+    left: 15%;
+    }
+    .videito{
+        display:none;
+    }
+    .foto-videito{
+        display: block;
+    width: 100%;
+	height:auto;
+	position: relative;
+	z-index:-3;
+	margin-bottom: -5px;
+    }
+    .envol-cont-items-menu{
+   /*border: solid 1px red;*/
+    width:100%;
+    overflow:scroll;
+    }
+    .frase-first-box{
+    font-size:30px;
+    }
+    .hijo-cont-form{
+    display:block;
+    flex-wrap: nowrap;
+    justify-content:center;
+    }
+    .Cont-form,.cont-info{
+    width:100%;
+}
+}
+@media screen and (max-width: 700px){
+
+.cont-proceso-desarrollo, .cont-sobre-mi{
+	width: 90%;
+	left: 5%;
+	display:block;
+    flex-wrap:nowrap;
+    justify-content:center;
+    }
+    .sobre-mi-parrafo{
+    width:100%;
+    height:auto;
+    padding-top:5%;
+    }
+    .mi-avatar{
+        margin-left:25%;
+        width:50%;
+        max-width:400px;
+    }
+.items-proces-desarrollo{
+	margin-top: 30px;
+	max-width: 100%;
+    }
+
+.items-proces-desarrollo img {
+	width: 50%;
+	max-width: 200px;
+	position: relative;
+	left: 5%;
+}
+.inspira{
+    width:50%;
+    left:25%;
+}
+.inspira h1{
+		font-size:20px;
+	}
+	.que-hago p{
+	font-size: 18px;
+}
+	.cont-footer{
+	width: 100%;
+	height: 60%;
+	top: 20%;
+	left: 0%;
+}
+
+.cont-second-box p{
+	margin-top: 20px;
+	text-align: justify;
+	line-height: 20px;
+}
+ #portada-movil,#porata-contacto-movil,#portada-servicios-movil{
+    display:block;
+    }
+    #portada-pc,#porata-contacto-pc,#portada-servicios-pc{
+    display:none;
+    }
+    .frase-first-box{
+        padding-top:25%;
+        padding-left:5px;
+        padding-right:5px;
+    }
+}
+@media screen and (max-width: 500px){
+	 .cont-first-box .que-hago{
+	width: 100%;
+    top: 25%;
+    left: 0%;
+}
+.inspira{
+    width:90%;
+    left:5%;
+    height:auto;
+}
+.inspira h1{
+		font-size:18px;
+	}
+	.que-hago p{
+	font-size: 16px;
+		padding-bottom: 5px;
+}
+    	.que-hago h1{
+	font-size: 16px;
+}
+
+	 .cont-footer{
+	font-size: 12px;
+}
+.contacto-fb{
+	bottom:0;;
+	left:0;
+	max-width: 320px;
+	max-height: 80%;
+	padding:0;
+}
+.cont-sobre-mi{
+	width: 100%;
+	left: 0%;
+    }
+.mi-avatar{
+        margin-left:5%;
+        width:90%;
+        max-width:400px;
+    }
+     .frase-first-box{
+        padding-top:20%;
+    }
+}
+@media screen and (max-width : 380px){
+    	.que-hago p{
+	font-size: 12px;
+		padding-bottom: 5px;
+            }
+    	.que-hago h1{
+	font-size: 14px;
+            }
+    .cont-first-box .que-hago {
+	width: 100%;
+    top: 30%;
+    left: 0%;
+           }
+    .frase-first-box{
+        font-size:20px;
+        padding-top:25%;
+    }
+           
+}

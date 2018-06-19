@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora par compras | Frank.pe </title>
+  <meta  charset="utf-8">
+  <link rel="icon" type="image/png" href="/imagenes/icono-frank.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+<meta name="description" content=" FCV-Agencia de desarrollo web ideas. Calculadora para compras ,calculadora para compras detalladas" />
+<meta name="keywords" content="FCV-Agencia de desarrollo web ideas,Calculadora para compras, calculadora con lista " />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	/*function Agregaitems(){
+		var cajanompro = document.getElementsByClassName('cajasnompro');
+		var cajacantidad = document.getElementsByClassName('cajascantidad');
+		var cajaprecio = document.getElementsByClassName('cajaprecio');
+		var cajaresultado = document.getElementsByClassName('cajaresultado');
+
+		cajanompro[0].innerHTML +="<input type='text' placeholder='Nombre del producto NUEVO' >";
+		cajacantidad[0].innerHTML +="<input type='text' placeholder='Cantidad' >";
+		cajaprecio[0].innerHTML +="<input type='text' placeholder='Precio' >";
+		cajaresultado[0].innerHTML +="<input type='text' placeholder='resultado' >";
+	}*/
+	var indi =1;
+	$(document).ready(function(){
+    $("#Add").click(function(){
+		indi = indi+1;
+        $(".cajasnompro").append(" <input type='text' placeholder='Nombre del producto'>");
+		$(".cajascantidad").append(" <input type='number'  class='cant' placeholder='Cant' onkeyup='Resultado("+indi+")'>");
+		$(".cajaprecio").append(" <input type='number'  class='precio' placeholder='Prec' onkeyup='Resultado("+indi+")' >");
+		$(".cajaresultado").append(" <input type='number'  class='resultado'>");
+    });
+});
+	 function Resultado(posi){
+		 var precio = document.getElementsByClassName('precio');
+		 var cantidad = document.getElementsByClassName('cant');
+		  var resultado = document.getElementsByClassName('resultado');
+		   cost =  precio[posi].value * cantidad[posi].value;
+		 resultado[posi].value=cost;
+	 }
+	
+	function CalcularTotal(){
+var Precios=document.getElementsByClassName('resultado');
+var CantidadDePrecios =Precios.length;
+var suma =0;
+ for (var i = 0; i < CantidadDePrecios; i++) {
+           var Price=Precios[i].value;
+           if (Price=='') {
+              Price=0;
+                suma+=parseFloat(Price);
+           }
+           else {
+              suma+=parseFloat(Price);
+           }
+ }
+ resultado="S/"+suma.toFixed(5);
+ document.getElementById('resultado').innerHTML=resultado;
+}
+
+function CambiaFondo(TheBtn){
+    var Btn = document.getElementsByClassName('BtnCont');
+    Btn[TheBtn].style.background = '#205396'; 
+    Btn[TheBtn].style.color = 'white';   
+}
+function ReiniciaFondo(TheBtn){
+    var Btn = document.getElementsByClassName('BtnCont');
+    Btn[TheBtn].style.background = '#3B5999';
+     Btn[TheBtn].style.color = 'white';   
+}
+	
+</script>
+</head>
+<body>
+  <div id="contenedor">
+    <div id="contenido">
+  <header>
+  <a href="http://frank.pe/">  <img src="/imagenes/icono-frank.png" id="logo"></a>
+    <h1 class="LogoT"> Frank.pe </h1>
+
+  </header>
+  <form id="FrmLista">
+    <h2 class="titulos">Ingrese los productos que comprará</h2>
+    <div  class="Contecajas">
+     <div class="cajasnompro">
+      <h3 class="titulos">Productos</h3>
+      <input type="text" placeholder="Nombre del producto"  >
+      <input type="text" placeholder="Nombre del producto"  >
+     </div>
+     <div class="cajascantidad">
+     <h3 class="titulos">cantidad</h3>
+      <input type="number"  class="cant" onkeyup="Resultado(0)" placeholder="Cant" >
+      <input type="number"  class="cant" onkeyup="Resultado(1)" placeholder="Cant">
+      </div>
+      <div class="cajaprecio">
+     <h3 class="titulos">Pre Und</h3>
+      <input type="number"  class="precio" onkeyup="Resultado(0)" placeholder="Prec" >
+      <input type="number"  class="precio" onkeyup="Resultado(1)" placeholder="Prec" >
+    </div>
+     <div class="cajaresultado">
+     <h3 class="titulos">Resultado</h3>
+      <input type="number"  class="resultado"  >
+      <input type="number" class="resultado"  >
+    </div>
+	  </div>
+    <div class="controles">
+ <input type="button" value="CALCULAR" onclick="CalcularTotal()" class="BtnCont" onmousedown="CambiaFondo('0')" onmouseup="ReiniciaFondo('0')">
+ <input type="button" value="ABREGAR MAS PRODUCTOS" id="Add" class="BtnCont" onmousedown="CambiaFondo('1')" onmouseup="ReiniciaFondo('1')">
+ <label>Total :</label><label  id="resultado">0.00</label>
+ </div>
+  </form>
+    </div>
+    <div class="footer">
+    <ul>
+     <li><a href="https://www.facebook.com/FCVAgenciaDeDesarrolloWeb/"><img src="imagenes/iconos/face.png"></a></li>
+     <li><a href="https://www.instagram.com/fcv.desarrolladores.web"><img src="https://docs.google.com/drawings/d/e/2PACX-1vQhjLiqe1sPT4rA5rZAG9nCQlvaScfv9MItXASlc5PkyigGpQtMCBifgw1TSFCLvjLq5RG2R0mXGU2A/pub?w=41&amp;h=39"></a></li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>
